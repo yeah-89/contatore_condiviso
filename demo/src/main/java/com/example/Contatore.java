@@ -9,7 +9,7 @@ public class Contatore {
         valoreMassimo=num;
     }
 
-    public boolean incrementa(String nomeThread){
+    public synchronized boolean incrementa(String nomeThread){
         if(valore<valoreMassimo){
             valore++;
             System.out.println(nomeThread + " ha incrementato il valore a: " + valore);
